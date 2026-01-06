@@ -6,19 +6,26 @@ int main(){
     Exercise 5
 Program 1
 
-    char ch;
-    cout<<"Enter the character :: > ";
+#include<iostream>
+using namespace std;
+int main(){	
+	char ch;
+    cout<<"Enter the character : ";
     cin>>ch;
     if(ch>='a' && ch<='z')
-    cout<<"Entered character is a lowercase letter ::> ";
+    cout<<"Entered character is a lowercase letter : ";
     else
-    cout<<"Entered character is Not  a lowercase letter ::> ";
-
+    cout<<"Entered character is Not  a lowercase letter : ";
+    return 0;
+}
 
 Program 2 
 
+#include<iostream>
+using namespace std;
+int main(){	
 char ch;
-cout<<"Enter the Charactrer ::> ";
+cout<<"Enter the Character: ";
 cin>>ch;
 if(ch=='s' || ch=='S')
 cout<<"Senior sales man salary is 400 a week ";
@@ -26,17 +33,24 @@ else if(ch=='j' || ch=='J')
 cout<<"Junior sales man salary is 275 a week ";
 else
 cout<<"Error ";
+    return 0;
+}
 
 
 Program 3
 
+#include<iostream>
+using namespace std;
+int main(){	
 int a,b,c;
-cout<<"Enter the three number ::> ";
+cout<<"Enter the three number: ";
 cin>>a>>b>>c;
 if(a!=0)
-cout<<((b%a==0 && c%a==0) ? "IS a common divisior " : " Not a common divisior ");
+cout<<((b%a==0 && c%a==0) ? "IS a common divisor ": " Not a common divisor ");
 else
-cout<<"A Should  not be a zero ";
+cout<<"a Should  not be a zero ";
+    return 0;
+}
 
 Program 4
 
