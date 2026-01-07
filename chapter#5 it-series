@@ -10,12 +10,12 @@ Program 1
 using namespace std;
 int main(){	
 	char ch;
-    cout<<"Enter the character : ";
+    cout<<"Enter the character: ";
     cin>>ch;
     if(ch>='a' && ch<='z')
-    cout<<"Entered character is a lowercase letter : ";
+    cout<<"Entered character is a lowercase letter: ";
     else
-    cout<<"Entered character is Not  a lowercase letter : ";
+    cout<<"Entered character is Not  a lowercase letter: ";
     return 0;
 }
 
@@ -54,53 +54,69 @@ cout<<"a Should  not be a zero ";
 
 Program 4
 
+#include<iostream>
+using namespace std;
+int main(){	
+
 char ch;
 int a,b,h,s;
-cout<<"Enter the character ::> ";
+cout<<"Enter the character : ";
 cin>>ch;
 if(ch=='S'){
-    cout<<"Enter the side of the triangle :: > ";
+    cout<<"Enter the side of the triangle : ";
     cin>>s;
     a=s*s;
     cout<<"Area = "<<a;
 }
 else if(ch=='T'){
-    cout<<"Enter the Base of the Triangle ::> ";
+    cout<<"Enter the Base of the Triangle : ";
     cin>>b;
-    cout<<"Enter the height of the triangle ::> ";
+    cout<<"Enter the height of the triangle : ";
     cin>>h;
     a=1/2.0*b*h;
 cout<<"Area = "<<a;
 }
 else 
 cout<<"INVALID ";
+    return 0;
+}
+
 
 Program 5
 
+#include<iostream>
+using namespace std;
+int main(){	
 char n;
-float F,C;
-cout<<"Enter the character :: > ";
+float F, C;
+cout<<"Enter the character:";
 cin>>n;
 if(n=='f' || n=='F'){
-    cout<<"Enter the temperature in farahanheight :: > ";
+    cout<<"Enter the temperature in farahanheight: ";
     cin>>F;
     C=(F-32)*5.0/9.0;
   cout<<C;
 }
 else if(n=='c' || n=='C'){
-    cout<<"Enter the temperature in calcius ::> ";
+    cout<<"Enter the temperature in calcius: ";
     cin>>C;
     F=(9.0/5.0*C)+32;
     cout<<F;
 }
 else
 cout<<"INVALID ";
+    return 0;
+}
+
 
 
 Program 6 
 
+#include<iostream>
+using namespace std;
+int main(){	
 int n;
-cout<<"Enter the number :: > ";
+cout<<"Enter the number: ";
 cin>>n;
 if(n==1)
 cout<<"Wastern Digital "<<endl;
@@ -114,11 +130,17 @@ else if(n==5)
 cout<<"Verbatim Corporation "<<endl;
 else
 cout<<"INVALID ";
+    return 0;
+}
+
 
 Program 7
 
+#include<iostream>
+using namespace std;
+int main(){	
 char n;
-cout<<"Enter the Characters ::> ";
+cout<<"Enter the Characters :";
 cin>>n;
 if(n=='A')
 cout<<"Advanture Movies "<<endl;
@@ -132,71 +154,93 @@ else if(n=='S')
 cout<<"Science Fiction Movies  ";
 else
 cout<<"Error";
+    return 0;
+}
 
 Program 8 
 
+#include<iostream>
+using namespace std;
+int main(){	
 int a,b,c,d;
 char n;
-cout<<"Enter the converstion type ::> ";
+cout<<"Enter the converstion type : ";
 cin>>n;
 if(n=='i' || n=='I'){
-   cout<<"Enter the Amount in Inches ::> ";
+   cout<<"Enter the Amount in Inches :";
     cin>>a;
-    cout<<a<<"Inches is  = " <<a*2.54<<" Centimeter :: ";
+    cout<<a<<"Inches is  = " <<a*2.54<<" Centimeter : ";
 }
 else if(n=='g' || n=='G'){
-    cout<<"Enter the amount in Gallons ::>";
+    cout<<"Enter the amount in Gallons :";
 cin>>b;
 cout<<b<<" Gallon is = "<<b*3.785<<" Liters ";
 }
 else if(n=='m' || n=='M'){
-    cout<<"Enter the amount in Miles ::>";
+    cout<<"Enter the amount in Miles :";
 cin>>c;
 cout<<c<<" Mile is = "<<c*1.609<<" Kilometers ";
 }
 else if(n=='p' || n=='P'){
-    cout<<"Enter the amount in ponds ::>";
+    cout<<"Enter the amount in ponds :";
 cin>>d;
 cout<<d<<" Pound is = "<<d*.4536<<" Kilograms ";
 }
 else
 cout<<"Error Message ! ";
+    return 0;
+}
 
 
 Program 9
 
 ::> agr 100 pa divisble ha to wo leap year nhi ha 
 
+#include<iostream>
+using namespace std;
+int main(){	
 int year;
-cout<<"Enter the year ::> ";
+cout<<"Enter the year: ";
 cin>>year;
 if( year%400==0)
 cout<<"Is a leap year ";
-
 else if(year%100==0)
 cout<<"Not a leap year ";
 else if(year%4==0)
-cout<<"Year is a leap year ::> ";
+cout<<"Year is a leap year: ";
 else
 cout<<"Not a leap year ";
+}
+
 
 
 Program 10
 
-int temp;
-cout<<"Enter the temperature ::> ";
-cin>>temp;
-if(temp>35)
-cout<<" Hot Day ";
-else if(temp>=25 && temp<=35)
-cout<<"Pleasant Day ";
-else if(temp<25)
-cout<<"Cool Day ";
+#include<iostream>
+using namespace std;
+int main(){	
+int year;
+cout<<"Enter the year: ";
+cin>>year;
+if( year%400==0)
+cout<<"Is a leap year ";
+else if(year%100==0)
+cout<<"Not a leap year ";
+else if(year%4==0)
+cout<<"Year is a leap year: ";
+else
+cout<<"Not a leap year ";
+return 0;
+}
+
 
 Program 11
 
+#include<iostream>
+using namespace std;
+int main(){	
 int mark,total_mark=1100;
-cout<<"Enter the obtained marks out of 1100 :: > ";
+cout<<"Enter the obtained marks out of 1100: ";
 cin>>mark;
 float percantage=(mark*100)/total_mark;
 if(percantage>=80)
@@ -213,22 +257,34 @@ else if(percantage>=33)
 cout<<"Grade E ";
 else
 cout<<"Fail ";
+return 0;
+}
+
 
 
 Program 12
 
+#include<iostream>
+using namespace std;
+int main(){	
 int n1,n2,n3;
-cout<<"Enter the marks of Three Subjects ::> ";
+cout<<"Enter the marks of Three Subjects: ";
 cin>>n1>>n2>>n3;
 int sum=n1+n2+n3;
 float avg=(float)sum/3.0;
 cout<<"The sum of the subject is :: "<<sum<<endl;
 cout<<"The Average marks is ::> " <<avg<<endl;
 cout<<((avg>=40) ? "Pass " : "Fail ");
+return 0;
+}
+
 
 Program 13
 
 
+#include<iostream>
+using namespace std;
+int main(){	
     int h, m;
     cout << "Enter time (HH MM): ";
     cin >> h >> m;
@@ -241,12 +297,19 @@ Program 13
         cout << "Standard Time: " << h << ":" << m << " PM" << endl;
     else 
         cout << "Standard Time: " << h - 12 << ":" << m << " PM" << endl;
+return 0;
+}
+
 
 
 Program 14
 
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){	
 float a,b,c,x,x1,x2;
-cout<<"Enter the value of A: B: C: ::: > ";
+cout<<"Enter the value of A: B: C: ";
 cin>>a>>b>>c;
 x=b*b-4*a*c;
 if(x>0){
@@ -256,14 +319,20 @@ cout<<x1<<" Root is "<<x2 <<endl;
 }
 else
 cout<<"Invalid ";
+return 0;
+}
+
 
 Program 15
 
 
-int main() {
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
     float salary, total_salary, tax;
 
-    cout << "Enter the salary of the Employee ::> ";
+    cout << "Enter the salary of the Employee :";
     cin >> salary;
     if (salary >= 30000)
         tax = salary * 0.20;
@@ -276,9 +345,12 @@ int main() {
         return 1;
     }
     total_salary = salary - tax;
-    cout << "The salary       ::> " << salary << endl;
-    cout << "The tax is       ::> " << tax << endl;
-    cout << "The net salary   ::> " << total_salary << endl;
+    cout << "The salary      : " << salary << endl;
+    cout << "The tax is      : " << tax << endl;
+    cout << "The net salary  : " << total_salary << endl;
+return 0;
+}
+
 
 
 Program 16
