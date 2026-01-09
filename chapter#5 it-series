@@ -210,28 +210,26 @@ else if(year%4==0)
 cout<<"Year is a leap year: ";
 else
 cout<<"Not a leap year ";
+return 0;
 }
-
-
 
 Program 10
 
 #include<iostream>
 using namespace std;
-int main(){	
-int year;
-cout<<"Enter the year: ";
-cin>>year;
-if( year%400==0)
-cout<<"Is a leap year ";
-else if(year%100==0)
-cout<<"Not a leap year ";
-else if(year%4==0)
-cout<<"Year is a leap year: ";
-else
-cout<<"Not a leap year ";
-return 0;
+int main(){
+    int temp;
+    cout<<"Enter temperature: ";
+    cin>>temp;
+    if(temp > 35)
+        cout<<"Hot day";
+    else if(temp >= 25 && temp <= 35)
+        cout<<"Pleasant day";
+    else
+        cout<<"Cool day";
+    return 0;
 }
+
 
 
 Program 11
@@ -242,23 +240,24 @@ int main(){
 int mark,total_mark=1100;
 cout<<"Enter the obtained marks out of 1100: ";
 cin>>mark;
-float percantage=(mark*100)/total_mark;
+float percentage=(mark*100)/total_mark;
 if(percantage>=80)
 cout<<"Grade A+ ";
-else if(percantage>=70)
+else if(percentage>=70)
 cout<<"Grade A ";
-else if(percantage>=60)
+else if(percentage>=60)
 cout<<"Grade B ";
-else if(percantage>=50)
+else if(percentage>=50)
 cout<<"Grade C ";
-else if(percantage>=40)
+else if(percentage>=40)
 cout<<"Grade D ";
-else if(percantage>=33)
+else if(percentage>=33)
 cout<<"Grade E ";
 else
 cout<<"Fail ";
 return 0;
 }
+
 
 
 
@@ -332,7 +331,7 @@ using namespace std;
 int main(){
     float salary, total_salary, tax;
 
-    cout << "Enter the salary of the Employee :";
+    cout << "Enter the salary of the Employee:";
     cin >> salary;
     if (salary >= 30000)
         tax = salary * 0.20;
