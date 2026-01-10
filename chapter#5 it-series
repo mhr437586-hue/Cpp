@@ -260,8 +260,6 @@ int main(){
 
 
 
-
-
 Program 12
 
 #include<iostream>
@@ -272,8 +270,8 @@ cout<<"Enter the marks of Three Subjects: ";
 cin>>n1>>n2>>n3;
 int sum=n1+n2+n3;
 float avg=(float)sum/3.0;
-cout<<"The sum of the subject is :: "<<sum<<endl;
-cout<<"The Average marks is ::> " <<avg<<endl;
+cout<<"The sum of the subject is : "<<sum<<endl;
+cout<<"The Average marks is : " <<avg<<endl;
 cout<<((avg>=40) ? "Pass " : "Fail ");
 return 0;
 }
@@ -288,7 +286,6 @@ int main(){
     int h, m;
     cout << "Enter time (HH MM): ";
     cin >> h >> m;
-
     if (h == 0) 
             cout << "Standard Time: 12:" << m << " AM" << endl;
     else if (h < 12) 
@@ -331,7 +328,6 @@ Program 15
 using namespace std;
 int main(){
     float salary, total_salary, tax;
-
     cout << "Enter the salary of the Employee:";
     cin >> salary;
     if (salary >= 30000)
