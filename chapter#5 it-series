@@ -351,10 +351,14 @@ return 0;
 
 Program 16
 
+
+#include<iostream>
+using namespace std;
+int main(){
 int year,month;
-cout<<"Enter the year ::> ";
+cout<<"Enter the year: ";
 cin>>year;
-cout<<"Enter the month ::> ";
+cout<<"Enter the month:";
 cin>>month;
 if(month==1 )
 cout<<"Janurary  " <<year<<" has "<<"31 days";
@@ -382,120 +386,140 @@ else if(month==12)
 cout<<"December " <<year<<" has "<<"31 days";
 else
 cout<<"INVALIED ";
-4 6 9 11 = 30 days 
-2 29 or 29 
-1 3 5  7 8 10 12 =31
+return 0;
+}
+//4 6 9 11 = 30 days 
+//2 29 or 29 
+//1 3 5  7 8 10 12 =31
 
 Program 17 
 
-cout<<"M           =Motorcycle"<<endl;
-cout<<"C           =Car"<<endl;
-cout<<"M           =Bus"<<endl;
+
+#include<iostream>
+using namespace std;
+int main(){
+cout<<"M=Motorcycle"<<endl;
+cout<<"C=Car"<<endl;
+cout<<"M=Bus"<<endl;
 char t;
 int p;
-cout<<"Enter the type of vechicle ::> ";
+cout<<"Enter the type of vehicle:";
 cin>>t;
 if(t=='M'){
-cout<<"Enter the days to park ::> ";
+cout<<"Enter the days to park:";
 cin>>p;
-cout<<"Total charges of Parking is ::> "<<p*10<<endl;
+cout<<"Total charges of Parking is:"<<p*10<<endl;
 }
 else if(t=='C'){
-    cout<<"Enter the days to park ::> ";
+    cout<<"Enter the days to park:";
     cin>>p;
-    cout<<"Total charges of Parking is ::> "<<p*20<<endl;
+    cout<<"Total charges of Parking is:"<<p*20<<endl;
     }
   else   if(t=='B'){
-        cout<<"Enter the days to park ::> ";
+        cout<<"Enter the days to park:";
         cin>>p;
-        cout<<"Total charges of Parking is ::> "<<p*30<<endl;
+        cout<<"Total charges of Parking is:"<<p*30<<endl;
         }
    else 
  cout<<"Invalid ";
-
+return 0;
+}
 
 Program 18
 
-
-float a;
-string n;yaha pa ham char bi use kar sakta tha lakin wo ik character he safe karta ha ham na jasa kg rakha ha to wo error da ga is lia ham string ka use kar raha han
-cout<<"Enter the choice ::>(c,i,kg,km ) <:: ";
-cin>>n;
-if(n=="c"){
-    cout<<"Enter the value in centimeter :>";
-    cin>>a;
-    cout<<"The value "<<a<<" convert centimeter to inches is "<<a*.394;
-}
-else if(n=="i"){
-    cout<<"Enter the value in Liter :>";
-    cin>>a;
-    cout<<"The value "<<a<<" convert  liter  to gallon is "<<a*.264;
-}
-else if(n=="km"){
-    cout<<"Enter the value in kilometer :>";
-    cin>>a;
-    cout<<"The value "<<a<<" convert kilometer  to miles is "<<a*.622;
-}
-else if(n=="kg"){
-    cout<<"Enter the value in kilogram :>";
-    cin>>a;
-    cout<<"The value "<<a<<" convert kilogram to pounds is "<<a*2.2;
+#include<iostream>
+using namespace std;
+int main() {
+    int choice;
+    float value;
+    cout << "1. cm to inches" << endl;
+    cout << "2. liter to gallons" << endl;
+    cout << "3. kilometer to miles" << endl;
+    cout << "4. kilogram to pounds" << endl;
+    cout << "Enter your choice: ";
+    cin >> choice;
+    cout << "Enter value: ";
+    cin >> value;
+    if(choice == 1)
+        cout << value << " cm = " << value * 0.394 << " inches" << endl;
+    else if(choice == 2)
+        cout << value << " liters = " << value * 0.264 << " gallons" << endl;
+    else if(choice == 3)
+        cout << value << " km = " << value * 0.622 << " miles" << endl;
+    else if(choice == 4)
+        cout << value << " kg = " << value * 2.2 << " pounds" << endl;
+    else
+        cout << "Invalid choice" << endl;
+    return 0;
 }
 
 
 Program 19
 
-
+#include<iostream>
+using namespace std;
+int main()
+{
 int n;
-cout<<"Enter the number :: > ";
+cout<<"Enter the number:";
 cin>>n;
 if(n>=0){
 if(n%2==0)
-cout<<"Positive Even :: ";
+cout<<"Positive Even:";
 else 
 cout<<"Positive  odd ";
  }
 else
  {
      if(n%2==0)
-     cout<<"Negative Even :: ";
+     cout<<"Negative Even: ";
      else 
      cout<<"Negative odd ";
      }
+    return 0;
+}
 
 
 Program 20
 
+#include<iostream>
+using namespace std;
+int main()
+{
 int a,b,c;
-cout<<"Enter the Three sides of the triangle :: ";
+cout<<"Enter the three sides of the triangle: ";
 cin>>a>>b>>c;
 if(a==b && a==c && b==c)
 cout<<"Equilateral Triangle";
 else if(a==b || a==c || b==c)
-cout<<"Isosceles Trianlge ";
+cout<<"Isosceles Triangle ";
 else
 cout<<"Scalene Triangle ";
+    return 0;
+}
 
 
 Program 21
 
-
-    int choice;
+#include<iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+  int choice;
     float area;
-
     cout << "Choose a shape to calculate the area:\n";
     cout << "1. Circle\n";
     cout << "2. Rectangle\n";
     cout << "3. Triangle\n";
-    cout << "Enter your choice (1-3): ";
+    cout << "Enter your choice:";
     cin >> choice;
-
     switch (choice) {
         case 1: {
             float radius;
             cout << "Enter the radius of the circle: ";
             cin >> radius;
-            area = M_PI * radius * radius; // PIR^2
+            area = M_PI * radius * radius;    // PIR^2
             cout << "Area of the Circle: " << area << endl;
             break;
         }
@@ -516,8 +540,8 @@ Program 21
             break;
         }
         default:
-            cout << "Invalid choice! Please select a number between 1 and 3.\n";
+            cout << "Invalid choice! Please select a number between 1 and 3.";
     }
-
 return 0;
 }
+
