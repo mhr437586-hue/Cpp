@@ -1,0 +1,688 @@
+ #include<iostream>
+#include<cmath>
+#include<iomanip>
+
+ using namespace std;
+ int main(){
+  program 4.1
+  int n=10;
+  char ch='*';
+  cout<<"Testing output is ........";
+  cout<<n<<ch;
+  return 0;
+}
+
+program 4.2
+
+float a,b;
+cout<<"Enter the number :: ";
+cin>>a>>b;
+cout<<"sum of the number is :: "<<a+b;
+
+program 4.3
+
+int area,lenght,width;
+cout<<"Enter the lenght :: ";
+cin>>lenght;
+cout<<"Enter the width : :";
+cin>>width;
+area=lenght*width;
+cout<<"The area of the rectangular is :: "<<area;
+
+program 4.4
+
+cout<<"*"<<endl;
+cout<<"*\t*"<<endl;
+cout<<"*\t*\t*"<<endl;
+cout<<"*\t*\t*\t*"<<endl;
+
+program 4.5 
+
+cout<<"1\t2\t3\t4\t5"<<endl<<"6\t7\t8\t9\t10 ";
+
+program 4.6
+
+cout<<"Pakistan\tis\tmy\tcountry"<<endl<<"Islamabad\tis\tits\tcapital";
+
+program 4.7
+
+cout<<"C"<<endl;
+cout<<"O\tM"<<endl;
+cout<<"P\tU\tT"<<endl;
+cout<<"E\tR\tI\tS"<<endl;
+cout<<"A\tW\tO\tR\tL"<<endl;
+cout<<"D\tO\tF\tS"<<endl;
+cout<<"C\tI\tE"<<endl;
+cout<<"N\tC"<<endl;
+cout<<"E"<<endl;
+
+Program 4.8
+
+cout<<"--------"<<endl;
+cout<<" --------"<<endl;
+cout<<"--------"<<endl;
+cout<<" --------"<<endl;
+cout<<"--------"<<endl;
+cout<<" --------"<<endl;
+cout<<"--------"<<endl;
+cout<<" --------"<<endl;
+
+Program 4.9
+
+cout<<"The use of setw is ........... when yyou want to space in two number or anything you only write and mention :: "<<endl;
+cout<<"Masroor Ali "<<setw(9)<<"wasif";
+
+program 4.10
+
+cout<<"Number"<<setw(9)<<"Square"<<setw(9)<<"Cube"<<endl;
+cout<<1<<setw(12)<<1*1<<setw(12)<<1*1*1<<endl;
+cout<<2<<setw(12)<<2*2<<setw(12)<<2*2*2<<endl;
+cout<<3<<setw(12)<<3*3<<setw(12)<<3*3*3<<endl;
+cout<<4<<setw(12)<<4*4<<setw(12)<<4*4*4<<endl;
+cout<<5<<setw(12)<<5*5<<setw(12)<<5*5*5<<endl;
+
+Program 4.11
+
+setprecision ka matlab hota ha ka ham na na jo value ander dani ha na wo atna he digits hama da ga points ka bad  
+
+float a,b;
+a=44.43456;
+b=33.45567754;
+float s=a/b;
+cout<<"Sum of the number is :: "<<s<<endl;
+cout<<"Sum of the number is :: "<<setprecision(4)<<s<<endl;
+
+this is the use of setfill in c++ 
+
+cout<<setw(15)<<setfill('*')<<"Result:";
+
+program 4.13
+
+cout<<setw(25)<<setfill('*')<<"OPP using C++"<<endl;
+cout<<setw(25)<<setfill('@')<<"OPP using C++"<<endl;
+cout<<setw(25)<<setfill('=')<<"OPP using C++"<<endl;
+
+Program 4.14
+
+string name,adress,age; ==> ya bhoot easy way ha ap is sa kar sakta han :: 
+char name[25],adress[30];
+int age;
+cout<<"Enter your name "<<endl;
+cin>>name;
+cout<<"Enter your City :: "<<endl;
+cin>>adress;
+cout<<"Enter your age "<<endl;
+cin>>age;
+cout<<endl<<endl;
+cout<<"Your Name is :: "<<name<<endl;
+cout<<"You city is Fasilabad :: "<<adress<<endl;
+cout<<"Your age is "<<age;
+
+Program 4.15
+
+
+int lenght,breadth;
+cout<<"Enter the length of rectangale :: ";
+cin>>lenght;
+cout<<"Enter the breadth of the rectangle :: ";
+cin>>breadth;
+int Area=lenght*breadth;
+cout<<"Area of rectangle = "<<Area;
+
+
+Program 4.16
+
+int a,b,c,d,s;
+float av;
+cout<<"Enter the four Integer :: ";
+cin>>a>>b>>c>>d;
+ s=a+b+c+d;
+ av=s/4.0;
+cout<<"Sum of the integer is = "<<s<<endl;
+cout<<"The product of the integer is  =  "<<a*b*c*d<<endl;
+cout<<"The Average of the integer is  = "<<av;
+
+Program 4.17
+
+==>Last ma Explicit Casting ka use hoya ha :: 
+
+int totalmarks,obtained;
+cout<<"Enter the total marks :: ";
+cin>>totalmarks;
+cout<<"Enter the obtained marks :: ";
+cin>>obtained;
+float percantage=(float)obtained*100/(float)totalmarks;
+cout<<"The percantage of the number is :: "<<percantage;
+
+program 4.18
+
+int principalam,rateofintreast,year;
+cout<<"Enter the Principal amount :: ";
+cin>>principalam;
+cout<<"Enter the rate of intrest :: ";
+cin>>rateofintreast;
+cout<<"Enter the time in years :: ";
+cin>>year;
+int simple_intrest=(principalam*rateofintreast*year)/100;
+cout<<"Principal amount = "<<principalam<<endl;
+cout<<"Rate of intrest = "<<rateofintreast<<"%"<<endl;
+cout<<"Number of years :: "<<year<<endl;
+cout<<"Simple Intreast Amount is :: ==> "<<simple_intrest;
+
+
+Program 4.19
+
+char ch;
+cout<<"Enter the charcater :: ";
+cin>>ch;
+int n=ch;
+cout<<"The ASCII code of this = "<<n<<endl;
+
+Program 4.20 
+
+int a,b;
+cout<<"Enter the number :: ";
+cin>>a;
+cout<<"Enter the number :: ";
+cin>>b;
+int q=a/b;
+int r=a%b;
+cout<<"Quotient =  "<<q<<endl;
+cout<<"Reminder = "<<r<<endl;
+
+Again 
+
+int a,b;
+cout<<"Enter the number : ";
+cin>>a;
+cout<<"Enter the number :: ";
+cin>>b;
+int reminder=a%b;
+int queti=a/b;
+cout<<"Reminder is "<<reminder<<endl;
+cout<<"Quetion is :: "<<queti;
+
+Program 4.21
+int a,b;
+cout<<"Enter the number  A :: ";
+cin>>a;
+cout<<"Enter the secound number  B :: ";
+cin>>b;
+int temp=a;
+a=b;
+b=temp;
+cout<<"The value of A is "<<a<<endl<<"The value of B is :: "<<b;
+
+
+PROGRAM 4.22
+   ==> This program show you how to change the value without using temp variable 
+
+int a,b;
+cout<<"Enter the number  A :: ";
+cin>>a;
+cout<<"Enter the secound number  B :: ";
+cin>>b;
+// a=10 b=5
+a=a+b;
+b=a-b;
+a=a-b;
+ cout<<"The value of A is "<<a<<endl<<"The value of B is :: "<<b;
+
+program 4.23
+
+double distance,speed,time;
+cout<<"Enter the distance :: ";
+cin>>distance;
+cout<<"Enter the  speed :: ";
+cin>>speed;
+ time=distance/speed;
+cout<<"Time required to reach destination :: "<<time;
+
+
+Program 4.24  
+
+
+float base,height;
+cout<<"Enter the base of the triangle :: ";
+cin>>base;
+cout<<"Enter the height of the triangle :: ";
+cin>>height;
+float Area=1/2.0*(base*height);
+cout<<"The area of the triangle is :: "<<Area<<endl;
+
+program 4.25
+
+int sec,h,m;
+cout<<"Enter the time in secound  = ";
+cin>>sec;
+ h=sec/3600;
+sec=sec%3600;
+m=sec/60;
+sec=sec%60;
+cout<<"Hours :: "<<h<<endl<<"Minute "<<m<<endl;
+
+Program 4.26
+
+float C,F;
+cout<<"Enter the temperature in Calcius :: ";
+cin>>C;
+F=9.0/5.0*C+32;
+
+cout<<"The temperature in Farahanheight is : : "<<F;
+
+
+
+program 4.27
+
+int height;
+cout<<"Enter you height in inches ::";
+cin>>height;
+float i=(float)height*2.54;
+cout<<"The height in centimeter  :: "<<i<<endl;
+
+Program 4.28
+
+float radius;
+cout<<"Enter the Radius of the circule ";
+cin>>radius;
+float Area=M_PI*(radius*radius);
+float circumfarance=2*M_PI*radius;
+cout<<"The Area of the Circle is :: "<<Area<<endl;
+cout<<"The circumfarance of the circle is :: "<<circumfarance;
+
+
+Program 4.29
+
+int a,initial_velocity,Final_velocity,time;
+cout<<"Enter the Initial Velocity :: ";
+cin>>initial_velocity;
+cout<<"Enter the Acceleration of the object :: ";
+cin>>a;
+cout<<"Enter the time of the object :: ";
+cin>>time;
+Final_velocity=initial_velocity+(a*time);
+cout<<"The Final velocity of the Object is :: "<<Final_velocity;
+
+Program 4.30
+
+int n,a,b,c,d;
+cout<<"Enter the number == ";
+cin>>n;
+a=n/10000;
+n=n%10000;
+b=n/1000;
+n=n%1000;
+c=n/100;
+n=n%100;
+d=n/10;
+n=n%10;
+cout<<"The number in reverse order is "<<n<<d<<c<<b<<a<<endl;
+
+
+Program 4.31
+
+int even,odd;
+cout<<"Enter the Even Number :: ";
+cin>>even;
+cout<<"Enter the odd Number :: ";
+cin>>odd;
+int result=1000-((even*5)+(odd*3));
+cout<<"Difference is = "<<result;
+
+
+Program 4.33
+
+int n;
+n=10;
+cout<<n<<endl;
+n*=2;
+cout<<n<<endl;
+n--;
+cout<<n<<endl;
+
+Program 4.34
+
+int w,hours,d,h;
+cout<<"Enter the number of hours :: ";
+cin>>hours;
+w=hours/168;
+hours=hours%168;
+d=hours/24;
+hours=hours%24;
+cout<<"Weeks : "<<w<<endl<<"Days : "<<d<<endl<<"Hours : "<<hours<<endl; 
+
+Program 4.35
+
+
+float elec,gas,petrol;
+cout<<"Enter the current rate of Electricity :: ";
+cin>>elec;
+cout<<"Enter the current rate of gas :: ";
+cin>>gas;
+cout<<"Enter the current rate of petrol :: ";
+cin>>petrol;
+
+elec=elec+elec*0.10;
+petrol=petrol+petrol*0.10;
+gas=gas+gas*0.10;
+
+cout<<"New Value of electricity is "<<elec<<endl;
+cout<<"New Value of gas is "<<gas<<endl;
+cout<<"New Value of petrol  is "<<petrol<<endl;
+
+
+  ::::>> Exercise Program   <<::
+
+
+Program 1
+
+int n=10;
+float a=10.22;
+char ch='A';
+cout<<"The value of int is ::>  "<<n<<endl;
+cout<<"The value of float is ::>  "<<a<<endl;
+cout<<"The value of char  is ::>  "<<ch<<endl;
+cout<<"End Of program ::> ";
+
+
+PROGRAM 2
+    float radius,Area,circum;
+    cout<<"Enter the Radius :: ";
+    cin>>radius;
+    Area=4*M_PI*(radius*radius);
+   circum=4.0/3*M_PI*pow(radius,3);
+   cout<<"Area of the sphere is :: "<<Area<<endl;
+   cout<<"Circumference is :: "<<circum<<endl;
+
+
+Program 3
+
+int a,b,c;
+cout<<"Enter the value of A :: ";
+cin>>a;
+cout<<"Enter the value of B  :: ";
+cin>>b;
+cout<<"Enter the value of C :: ";
+cin>>c;
+float s=(a+b+c)/2.0;
+float Area=sqrt(s*(s-a)*(s-b)*(s-c));
+ cout<<"The Area of the triangle is :: "<<Area;
+
+Program 4
+
+
+float mile;
+cout<<"Enter the miles :: ";
+cin>>mile;
+float kilometer=mile*1.609;
+cout<<"Kilometer is == "<<kilometer; 
+
+
+Program 5
+
+
+int  age,m,d;
+cout<<"Enter your age in years :: ";
+cin>>age;
+m=age*12;
+d=age*365;
+cout<<"The months your age is ::> "<<m<<endl<<"The days your life is ==> "<<d;
+
+
+Program 6
+
+int n;
+cout<<"Enter the number :: ";
+cin>>n;
+cout<<"The square of the number is ::> "<<pow(n,2)<<endl;
+cout<<"The cube of the number is ::> "<<pow(n,3);
+
+
+Program 7
+
+int n,a,b,c;
+cout<<"Enter the total pages of the book :: ";
+cin>>n;
+cout<<"Enter the number of pages a person read in one day :: ";
+cin>>a;
+cout<<"Enter the number of day a persson read :: ";
+cin>>b;
+int l=b*a;
+c=n-l;
+cout<<"The pages a person read :: "<<l<<endl;
+cout<<"The number of pages remain::>"<<c;
+
+
+Program 8
+
+
+int petrol;
+cout<<"Enter the Petrol in Liter :: ";
+cin>>petrol;
+float travel=(float)petrol*5.3;
+cout<<endl;
+cout<<"A car can travel "<<travel<<" Miles in "<<petrol<<" Liters ";
+
+
+Program 9
+
+
+int student,fee_per_student;
+cout<<"Enter the total number of students in class  ";
+cin>>student;
+cout<<"Enter the fee of the  student ::   ";
+cin>>fee_per_student;
+int total_fee=student*fee_per_student;
+cout<<"Total fee collected from the student  ==> "<<total_fee<<endl;
+
+
+program 10
+
+
+float F,C;
+cout<<"Enter the Temperature in Farahan Height ::> ";
+cin>>F;
+C=5.0/9*(F-32);
+cout<<C<<endl;
+
+
+Program 11
+
+
+string n;
+cout<<"Enter the  digits ::> ";
+cin>>n;
+cout<<n[0]<<endl;
+cout<<n[1]<<endl;
+cout<<n[2]<<endl;
+cout<<n[3]<<endl;
+cout<<n[4]<<endl;
+
+
+Program 12
+
+
+cout<<"1\t2\t3\t4\t5"<<endl<<"6\t7\t8\t9\t10";
+
+
+program 13
+
+
+int lenght,width,height;
+cout<<"Enter the Lenght ::> ";
+cin>>lenght;
+cout<<"Enter the width of the cude ::> ";
+cin>>width;
+cout<<"Enter the Height of the cube ::> ";
+cin>>height;
+int v=lenght*width*height;
+
+cout<<"The Volume of the cube is ::> "<<v;
+
+
+Program 14
+
+
+    int x1, y1, x2, y2;
+    cout << "Enter the X coordinate of first point: ";
+    cin >> x1;
+    cout << "Enter the Y coordinate of first point: ";
+    cin >> y1;
+    cout << "Enter the X coordinate of second point: ";
+    cin >> x2;
+    cout << "Enter the Y coordinate of second point: ";
+    cin >> y2;
+    float distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+   cout << "Distance between two points: " << distance << endl;
+
+
+Program 15
+
+
+int a,b,c,temp;
+cout<<"Enter the number ::> ";
+cin>>a;
+cout<<"Enter the secound number ::> ";
+cin>>b;
+cout<<"Enter the third number ::>";
+cin>>c;
+temp=a;
+a=b;
+b=c;
+c=a;
+c=temp;
+cout<<a<<endl<<b<<endl<<c;
+
+
+Program 16
+
+
+float  radius,angle;
+cout<<"Enter the radius of the arc ::> ";
+cin>>radius;
+cout<<"Enter the Angle of the arc  ::> ";
+cin>>angle;
+float  lenght=radius*angle;
+cout<<lenght<<endl;
+
+
+Programm 17
+
+
+float pound;
+cout<<"Enter the pounds ::> ";
+cin>>pound;
+float kilogram=pound*0.453592;
+cout<<"The pound convert into kilogram ::>"<<kilogram;
+
+
+Program 18
+
+
+    float radius, theta, area;
+    cout << "Enter the radius of the circle: ";
+    cin >> radius;
+    cout << "Enter the angle in radians: ";
+    cin >> theta;
+    area = 0.5 * radius * radius * theta;
+    cout << "The area of the sector is: " << area << endl;
+
+
+Program 19 
+
+
+int n;
+cout<<"Enter the number :: ";
+cin>>n;
+cout<<log2(n);
+    Program 20     
+    char ch;
+    cout<<"Enter the character ::> ";
+    cin>>ch;
+    ch++;
+    cout<<ch<<endl;
+    ch++;
+    cout<<ch<<endl;
+
+
+Program 21
+
+int a,b,c,d,e;
+cout<<"Enter the Five Integer ::> ";
+cin>>a>>b>>c>>d>>e;
+int sum=a+b+c+d+e;
+cout<<"Sum of the integer is equal ::> "<<sum<<endl;
+
+Program 22
+
+int sallary;
+cout<<"Enter the sallary ::> ";
+cin>>sallary;
+int darness_allowance=sallary*0.25;
+int house_rent=sallary*0.25;
+int gross_sallry=sallary+(darness_allowance+house_rent);
+cout<<"Gross salary ::> "<<gross_sallry;
+
+Program 23
+
+int hh,mm,ss;
+cout<<"Enter the time in HH_MM_SS ";
+cin>>hh>>mm>>ss;
+int t=(mm*3600)+(mm*60)+ss;
+cout<<"Total Time in Secounds  ::> "<<t;
+
+
+Program 24
+
+
+int principal_amount,rate_intrest,time,compound_intrest;
+cout<<"Enter the principal amount ::> ";
+cin>>principal_amount;
+cout<<"Ente the intrest rate ::>";
+cin>>rate_intrest;
+cout<<"Enter the time ";
+cin>>time;
+compound_intrest=(principal_amount+rate_intrest+time)/100;
+cout<<"The principal amount ::> "<<principal_amount<<endl;
+cout<<"The intrest rate ::> "<<rate_intrest<<"%"<<endl;
+cout<<"The time is ::> "<<time<<" years" <<endl;
+cout<<"The compound intrest is ::> "<<compound_intrest;
+
+
+Program 25
+
+
+char ch;
+cout<<"Enter the letter :: ";
+cin>>ch;
+int n=ch;
+cout<<n;
+
+Program 26
+
+
+int m1,m2,m3,m4,m5;
+int marks_obt,total_marks,percantage;
+cout<<"Enter the obtained marks ::> ";
+cin>>m1>>m2>>m3>>m4>>m5;
+total_marks=500;
+percantage=m1+m2+m3+m4+m5*100/total_marks;
+cout<<"The total marks is Equal to "<<total_marks<<endl;
+cout<<"The percantage of the number is " <<percantage<<endl;
+
+
+Program 27
+
+
+int principal_amount,rate_intrest,time,compund_amount;
+cout<<"Enter the Principal Amount ::> ";
+cin>>principal_amount;
+cout<<"Enter the rate of intrest ::> ";
+cin>>rate_intrest;
+cout<<"Enter the time ::>";
+cin>>time;
+compund_amount=principal_amount*pow((1+rate_intrest/100),time )-principal_amount;
+cout<<"The principal amount is :: >> "<<principal_amount;
+
+return 0;
+ }
