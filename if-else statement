@@ -1,0 +1,177 @@
+// if else statement practice
+
+1st program:
+
+//User se number lo
+   Agar number 0 ho → "Zero."
+   Agar >0 → "Positive"
+   Warna → "Negative."
+
+
+#include<iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+ int n;
+ cout<<"Enter the number";
+ cin>>n;
+ if(n==0)
+ cout<<"the no. is zero";
+ else if(n>0)
+ cout<<"the no. is positive";
+ else
+ cout<<"the no is negative";
+return 0;
+}
+
+
+2nd program:
+
+//User se age lo
+   Agar age 18 ya zyada ho → "Adult"
+   Warna → "Minor."
+
+
+#include<iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+ int age;
+ cout<<"Enter your age";
+ cin>>age;
+ if(age>=18)
+ cout<<"is adult";
+ else
+ cout<<"is young";
+return 0;
+}
+
+
+3rd program:
+
+//Ek program banao jo check kare:
+   Number Positive / Negative / Zero
+   Number Even / Odd
+
+
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Enter the number";
+    cin>>n;
+
+    // Positive / Negative / Zero
+
+    if(n==0)
+    cout<<"the number is zero"<< endl;;
+    else if(n>0)
+    cout<<"the number is positive"<< endl;;
+    else
+     cout<<"the number is negative"<< endl;;
+
+     // Even / Odd (skip zero)
+
+    if(n!=0){
+      if(n%2==0)
+     cout<<"the number is even"<< endl;;
+     else
+     cout<<"the number is odd";
+    }
+    return 0;
+}
+
+
+4th program:
+
+//User se marks (0–100) input lo aur print karo grade:
+   80–100 → A+
+   60–79 → B
+   40–59 → C
+   0–39 → Fail
+ Extra:
+   Agar marks >100 ya <0 → "Invalid marks" print karo
+
+
+#include<iostream>
+using namespace std;
+int main() {
+    
+int marks;
+    cout<<"Enter Marks";
+    cin>>marks;
+
+  if(marks < 0 || marks > 100)
+        cout << "Invalid marks";
+    else if(marks>=80)
+      cout<<"Grade is A+";
+    else if(marks>=60) 
+      cout<<"Grade is B+";
+    else if(marks>=40) 
+      cout<<"Grade is C";
+    else
+      cout<<"Grade is Fail";
+    return 0;
+}
+
+
+5th program:
+
+//User se ek number aur marks dono input lo:
+   Number check:
+   Positive / Negative / Zero
+   Even / Odd (skip zero)
+   Mark's check:
+   80–100 → A+
+   60–79 → B
+   40–59 → C
+   0–39 → Fail
+  <0 ya >100 → Invalid marks
+ Goal:
+   Ek hi program me number aur marks dono check ho aur output readable ho.
+
+
+#include<iostream>
+using namespace std;
+int main() {
+   int number, marks;
+    cout<<"Enter Marks";
+    cin>>marks;
+    cout<<"Enter number";
+    cin>>number;
+
+  if(marks < 0 || marks > 100)
+        cout << "Invalid marks";
+    else if(marks>=80)
+      cout<<"Grade is A+";
+    else if(marks>=60) 
+      cout<<"Grade is B+";
+    else if(marks>=40) 
+      cout<<"Grade is C";
+    else
+      cout<<"Grade is Fail";
+
+
+          // Positive / Negative / Zero
+          
+     if(number==0)
+      cout<<"the number is zero"<< endl;
+    else{
+     if(number>0)
+    cout<<"the number is positive"<< endl;
+    else
+     cout<<"the number is negative"<< endl;
+
+      // to check even or odd
+
+   if(number!=0)
+      if(number%2==0)
+     cout<<"number is even"<< endl;
+     else
+     cout<<"number is odd";
+}
+    return 0;
+}
+
