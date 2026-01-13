@@ -1,0 +1,79 @@
+
+Loop ka matlab:
+ek kaam ko bar-bar repeat karna jab tak condition true ho.
+C++ me 3 main loops hoti hain:
+for loop
+while loop
+do-while loop
+
+
+For Loop
+
+For loop tab use hoti hai jab:
+Tumhein pehle se pata ho
+Kitni dafa kaam repeat karna hai.
+
+
+While Loop
+
+While loop tab use hoti hai jab:
+Tumhein exact count nahi pata
+Sirf itna pata ho ke
+"jab tak condition true hai, tab tak kaam chalta rahe
+
+While loop ka rule:
+
+Pehle condition check hoti hai
+Phir kaam hota hai
+
+Agar condition false ho:
+→ Loop ek bar bhi nahi chalegi.
+
+
+Do-While Loop
+
+Do-While loop thori different hoti hai:
+
+Rule:
+Pehle kaam hota hai
+Phir condition check hoti hai
+
+Iska matlab:
+      Ye loop kam az kam 1 dafa zaroor chalegi
+      Chahe condition false hi kyu na ho
+
+
+    For Loop → fixed times ke liye
+         While Loop → jab tak condition true ho
+             Do-While Loop → kam az kam 1 dafa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
