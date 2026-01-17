@@ -14,6 +14,7 @@ int main() {
     return 0;
 }
 
+
 Program no.2
 
 #include <iostream>
@@ -28,6 +29,7 @@ int main() {
     }
     return 0;
 }
+
 
 Program no.3
 
@@ -47,6 +49,7 @@ int main() {
     return 0;
 }
 
+
 Program no.4
 
 #include <iostream>
@@ -58,6 +61,7 @@ int main() {
     }
     return 0;
 }
+
 
 Program no.5
 
@@ -88,6 +92,7 @@ int main() {
 
     return 0;
 }
+
 
 Program no.6
 
@@ -120,6 +125,7 @@ int main() {
     return 0;
 }
 
+
 Program no.7
 
 #include <iostream>
@@ -142,6 +148,7 @@ int main() {
     cout << "Minimum value = " << min;
     return 0;
 }
+
 
 Program no.8
 
