@@ -1,9 +1,9 @@
 
 Program no.1
+            Pattern using while loop
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int i = 1, j = 5;
     while(i <= 5) {
@@ -16,10 +16,10 @@ int main() {
 
 
 Program no.2
+            Number–Sum Table using a while loop
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int num = 1, sum = 0;
     while(num <= 5) {
@@ -32,10 +32,10 @@ int main() {
 
 
 Program no.3
+               Sum of series using do-while
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int i = 4;
     double sum = 0;
@@ -51,10 +51,10 @@ int main() {
 
 
 Program no.4
+            Display alphabets A to Z
 
 #include <iostream>
 using namespace std;
-
 int main() {
     for(char ch = 'A'; ch <= 'Z'; ch++) {
         cout << ch << " ";
@@ -63,19 +63,18 @@ int main() {
 }
 
 
+
 Program no.5
+            Largest, Smallest & Average of 5 numbers
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int num, max, min, sum = 0;
-
     cout << "Enter number 1: ";
     cin >> num;
     max = min = num;
     sum = num;
-
     for(int i = 2; i <= 5; i++) {
         cout << "Enter number " << i << ": ";
         cin >> num;
@@ -85,7 +84,6 @@ int main() {
 
         sum += num;
     }
-
     cout << "Largest = " << max << endl;
     cout << "Smallest = " << min << endl;
     cout << "Average = " << sum / 5.0 << endl;
@@ -95,24 +93,21 @@ int main() {
 
 
 Program no.6
+           Quiz Program
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int countA = 0, countB = 0, countC = 0, countD = 0;
     char ans;
-
     for(int i = 1; i <= 20; i++) {
         cout << "Question " << i << " (A/B/C/D): ";
         cin >> ans;
-
         if(ans == 'A') countA++;
         else if(ans == 'B') countB++;
         else if(ans == 'C') countC++;
         else if(ans == 'D') countD++;
     }
-
     if(countA > countB && countA > countC && countA > countD)
         cout << "Most selected: A";
     else if(countB > countA && countB > countC && countB > countD)
@@ -121,22 +116,19 @@ int main() {
         cout << "Most selected: C";
     else
         cout << "Most selected: D";
-
     return 0;
 }
 
 
 Program no.7
+            Minimum of 20 numbers
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int num, min;
-
     cout << "Enter number 1: ";
     cin >> min;
-
     for(int i = 2; i <= 20; i++) {
         cout << "Enter number " << i << ": ";
         cin >> num;
@@ -144,93 +136,79 @@ int main() {
         if(num < min)
             min = num;
     }
-
     cout << "Minimum value = " << min;
     return 0;
 }
 
 
 Program no.8
+           Fibonacci Series
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int n, a = 0, b = 1, c;
-
     cout << "Enter limit: ";
     cin >> n;
-
     cout << a << " " << b << " ";
-
     for(int i = 3; i <= n; i++) {
         c = a + b;
         cout << c << " ";
         a = b;
         b = c;
     }
-
     return 0;
 }
 
 
 Program no.9
+           Armstrong Numbers
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int n, num, sum, digit;
-
     cout << "Enter limit: ";
     cin >> n;
-
     for(int i = 1; i <= n; i++) {
         num = i;
         sum = 0;
-
         while(num > 0) {
             digit = num % 10;
             sum += digit * digit * digit;
             num /= 10;
         }
-
         if(sum == i)
             cout << i << " ";
     }
-
     return 0;
 }
 
 
 Program no.10
+           Perfect Numbers
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int n;
-
     cout << "Enter limit: ";
     cin >> n;
-
     for(int i = 1; i <= n; i++) {
         int sum = 0;
-
         for(int j = 1; j < i; j++) {
             if(i % j == 0)
                 sum += j;
         }
-
         if(sum == i)
             cout << i << " ";
     }
-
     return 0;
 }
 
 
 Program no.11
+            Highest & Second Highest Marks
 
 #include <iostream>
 using namespace std;
@@ -390,3 +368,197 @@ int main() {
     cout << "You entered: " << num;
     return 0;
 }
+
+
+Program no.17
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, last = 0;
+
+    while(true) {
+        cin >> num;
+
+        if(num < 0)
+            break;
+
+        last = num;
+    }
+
+    cout << "Last positive value: " << last;
+    return 0;
+}
+
+
+Program no.18
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int x, n;
+    double sum = 0;
+
+    cout << "Enter x and n: ";
+    cin >> x >> n;
+
+    for(int i = 1; i <= n; i++) {
+        sum += pow(x, i) / i;
+    }
+
+    cout << "Sum = " << sum;
+    return 0;
+}
+
+
+Program no.19
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int x;
+    double sum = 10;
+
+    cout << "Enter x: ";
+    cin >> x;
+
+    for(int i = 1; i <= 4; i++) {
+        sum += (i + 1) * pow(x, i);
+    }
+
+    cout << "Sum = " << sum;
+    return 0;
+}
+
+
+Program no.20
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double sum = 0;
+
+    for(int i = 1; i <= 99; i += 2) {
+        sum += (double)i / (i + 1);
+    }
+
+    cout << "Sum = " << sum;
+    return 0;
+}
+
+
+Program no.21
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 1024;
+
+    while(n >= 2) {
+        cout << n << " ";
+        n = n / 2;
+    }
+
+    return 0;
+}
+
+
+Program no.22
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 1;
+
+    while(n <= 200) {
+        cout << n << " ";
+        n = n * 3;
+    }
+
+    return 0;
+}
+
+
+Program no.23
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 8;
+
+    while(n <= 100) {
+        cout << n << " ";
+        n += 5;
+    }
+
+    return 0;
+}
+
+
+Program no.24
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sum = 0;
+
+    for(int i = 1; i <= 7; i++) {
+        sum += i;
+    }
+
+    cout << "Sum = " << sum;
+    return 0;
+}
+
+
+Program no.25
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double sum = 0;
+
+    for(int i = 1; i <= 10; i++) {
+        sum += (double)i / i;
+    }
+
+    cout << "Sum = " << sum;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
