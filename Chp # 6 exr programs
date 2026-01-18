@@ -240,6 +240,7 @@ int main() {
 
 
 Program no.12
+           Average using Sentinel 9999
 
 #include <iostream>
 using namespace std;
@@ -262,6 +263,7 @@ int main() {
 
 
 Program no.13
+            Prime Numbers less than input
 
 #include <iostream>
 using namespace std;
@@ -291,6 +293,7 @@ int main() {
 
 
 Program no.14
+           Factorial Program with Choice
 
 #include <iostream>
 using namespace std;
@@ -319,6 +322,7 @@ int main() {
 
 
 Program no.15
+            Check Prime Number
 
 #include <iostream>
 using namespace std;
@@ -348,6 +352,7 @@ int main() {
 
 
 Program no.16
+           Input positive numbers only
 
 #include <iostream>
 using namespace std;
@@ -371,6 +376,7 @@ int main() {
 
 
 Program no.17
+           Display last positive value
 
 #include <iostream>
 using namespace std;
