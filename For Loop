@@ -86,19 +86,29 @@ int main(){
 
 
 
+ForLoop Find Heigst and Lowest Number
 
 
+#include<iostream>
+using namespace std;
+int main(){
 
 
+int n;
+int digit;
+cout<<"Enter a number ";
+cin>>n;
+int max=-1; int min=10;
+for( ; n!=0 ; ){
+    digit=n%10;
+ if(digit>max)
+ max=digit;
+ if(digit<min)
+ min=digit;
+ n=n/10;
+}
+cout<<"Heigest digit is = "<<max<<endl<<"Mindigit is = "<<min;
 
 
-
-
-
-
-
-
-
-
-
+return 0;}
 
