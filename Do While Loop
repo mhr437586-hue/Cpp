@@ -1,0 +1,100 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+Program 1    
+    
+    int n=10;
+do{
+    cout<<n<<endl;
+    n--;
+}
+while(n>=1);
+
+
+Program 2
+
+int a,b;
+cout<<"Enter the first number ";
+cin>>a;
+cout<<"Enter the secound number ";
+cin>>b;
+do{
+    cout<<"Result is = "<<pow(a,b);
+ 
+
+}
+while(false);//False ka matlab ha loop bss ik he barr chala ge bss
+
+
+Program 3
+
+int a,b;
+char op;
+
+do{
+    cout<<"Enter two numbers ::> ";
+    cin>>a>>b;
+    cout<<"Product of the number is ::> "<<a*b<<endl<<endl;
+    cout<<"Do you want to continue ::> (y / n)";
+    cin>>op;
+}
+while(op!='n');
+
+
+
+Program 4
+
+int n,s=0,digit;
+cout<<"Enter the number ";
+cin>>n;
+int c=n;
+do{
+    digit=n%10;
+    s=s*10+digit;
+    n=n/10;
+}while(n!=0);
+if(s==c)
+cout<<"Number is palindrome ";
+else
+cout<<"Not a palidrome ";
+
+
+
+Program 5
+
+
+int a,b;
+cout<<"Enter the starting number ::> ";
+cin>>a;
+cout<<"Enter the secound number ::> ";
+cin>>b;
+do{
+ if(a%2==1){
+    cout<<a<<endl;
+ }
+ a++;
+
+}while(a<=b);
+
+
+Program 6
+  
+::> Euclidean Algorithm
+
+int a,b;
+cout<<"Enter the number ";
+cin>>a>>b;
+do{
+    int temp=b;
+    b=a%b;
+    a=temp;
+}
+while(b!=0);
+cout<<"GCD = "<<a<<endl;
+
+
+
+
+return 0;
+}
