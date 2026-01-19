@@ -1,0 +1,287 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+
+using namespace std;
+int fac(int n);
+int main(){
+    
+    
+Program 1
+
+    int n=1;
+    while(n<=5){
+        cout<<"Pakistan"<<endl;
+        n++;
+    }
+    
+    program 2
+    
+        int n=1;
+        while(n<=10){
+            cout<<n<<endl;
+            n++;
+        }
+        
+    
+    Program 3
+
+    int n=1,sum=0;
+    while(n<=5){
+        cout<<n<<endl;
+        sum+=n;   
+        n++;
+    }
+    cout<<"Sum of the number is ::> "<<sum<<endl;
+    
+    
+    program 4
+
+    int n=1;
+while(n<=5){
+    cout<<n<<setw(8)<<n*n<<endl;
+n++;
+}
+
+
+Program 5
+
+int n;
+cout<<"Enter the number ::> ";
+cin>>n;
+int i=1;
+while(i<=10){
+    cout<<n<<"*"<<i<<" = "<<n*i<<endl;
+    i++;
+}
+    
+    
+Program 6
+
+int n,digit,sum=0;
+cout<<"Enter the number ::> ";
+cin>>n;
+while(n!=0){
+    digit=n%10;
+    sum+=digit;
+    n=n/10;
+}
+    cout<<"sum of the number is ::> "<<sum;
+    
+    
+Program 7
+Factorial
+int n,f;
+cout<<"Enter the number ::> ";
+cin>>n;
+//
+f=1;
+int c=1;
+while(c<=n){
+    f=f*c;
+    c=c+1;
+}
+cout<<f;
+
+Program 8
+
+int  n=0;
+double radian;
+while(n<=360){
+    radian=n*M_1_PI/180;
+    cout<<setw(10)<<n<<setw(20)<<radian<<endl;
+    n=n+10;
+}
+
+
+Program  9
+
+float n=1.0;
+float a=2.0,sum=0;
+while(a<=100){
+    n=n+1.0/a;
+    a=a+2;
+}
+cout<<n;
+
+Program 10
+
+
+int n,sum=0,sum1=0;
+cout<<"Enter the number ::> ";
+cin>>n;
+while(n>=0){
+    if(n%2==0)
+    sum+=n;
+    else
+    sum1+=n;
+    n--;
+}
+cout<<"Sum of Even number is ::> "<<sum<<endl<<"Sum of odd numbers ::> "<<sum1;
+
+
+Program 11
+
+int n,sum=0,digit;
+cout<<"Enter the number ::> ";
+cin>>n;
+int c=n;
+while(n!=0){
+    digit=n%10;
+    sum+=pow(digit,3);
+n=n/10;
+}
+if(sum==c)
+    cout<<"Number is armstrong"<<endl;
+    else
+    cout<<"Not";
+
+Program 12
+
+
+int n,sum=0,sum1=0;
+int count=0;
+
+cout<<"Enter a positive number ::> ";
+cin>>n;
+int max=n;
+int min=n;
+while (n>0)
+{
+sum+=n;
+count++;
+if(n>max)
+max=n;
+else if (n<min)
+min=n;
+cout<<"Enter a positive number ::> ";
+cin>>n;
+}
+if(count==0){
+    cout<<"No positive number entered ::> "<<endl;
+}
+else{
+    cout<<"Enter number is = "<<count<<endl;
+    cout<<"Maximum number is ="<<max<<endl;
+    cout<<"Minimum number is ="<<min<<endl;
+}
+
+
+
+Program 13
+
+
+int cword=1;
+int ccharacters=0;//c=count
+char ch;
+cout<<"Enter the sentence ::> ";
+while(true){
+    ch=cin.get();
+    if(ch=='\n')
+    break;
+ if(ch==' ')
+        cword++;
+        else
+        ccharacters++;
+}
+cout<<"\t"<<" Count words are ::> "<<cword<<endl;
+cout<<"\t"<<" Count characters are ::> "<<ccharacters;
+
+
+
+
+Program 14
+
+int a,b;
+cout<<"Enter the starting number ::> ";
+cin>>a;
+cout<<"Enter the ending number ::> ";
+cin>>b;
+while(a<=b){
+    if(a%2==0){
+        cout<<a<<endl;
+    }
+    a++;
+}
+
+
+Program 15
+
+int n;
+
+while(true){cout<<"Enter the number ::> ";
+cin>>n;
+if(n>=0){
+    cout<<"You enter "<<n<<endl;
+}
+else{
+   cout<<"You Enter "<<n<<endl<<"End of program ";
+   break;}
+    n++;
+}
+
+
+Program 16
+
+
+int next,a=1,b=1;
+int count=2;
+cout<<a<<"\t"<<b<<"\t";
+while(count<=10){
+    next=a+b;
+    cout<<next<<"\t";
+    count++;
+    a=b;
+    b=next;
+}
+
+
+Program 17
+
+int n;
+int a,b,next;
+cout<<"Enter the number ::> ";
+cin>>n;
+if(n==0 || n==1)
+cout<<n<<" is the fibbonic number ";
+else{
+    a=0; b=1; next=a+b;
+    while(next<n){
+        a=b;
+        b=next;
+        next=a+b;
+    }
+    if(next==n)
+    cout<<n<<" is the fibbonic number ";
+    else
+    cout<<"Not a fibbonic number ";
+}
+
+Program 18
+
+
+int n;
+cout<<"Enter the number ::> ";
+cin>>n;
+while(n!=0){
+
+    cout<<"Square of "<<n<<" = "<<n*n<<endl;
+        cout<<"Enter the number ::> ";
+    cin>>n;
+}
+cout<<"Good Bye ";
+
+
+Program 19
+
+
+int n=1,sum=0; 
+while(n<=50){
+   sum+=pow(n,3);
+    n++;
+}
+cout<<"Sum = "<<sum;
+
+
+return 0;
+}
