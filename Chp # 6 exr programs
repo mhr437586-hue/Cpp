@@ -545,6 +545,182 @@ int main() {
 
 
 
+// Programs 31 to 47 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// 31. Sum of first n odd integers
+void program31() {
+    int n, sum = 0;
+    cout << "Enter n: ";
+    cin >> n;
+    for (int i = 1; i <= n; i++) sum += (2 * i - 1);
+    cout << "Sum = " << sum << endl;
+}
+
+// 32. Multiples of a given number between two numbers
+void program32() {
+    int num, a, b;
+    cout << "Enter number and range: ";
+    cin >> num >> a >> b;
+    for (int i = a; i <= b; i++)
+        if (i % num == 0) cout << i << " ";
+    cout << endl;
+}
+
+// 33. Count digits in a number
+void program33() {
+    int n, count = 0;
+    cout << "Enter number: ";
+    cin >> n;
+    while (n != 0) { count++; n /= 10; }
+    cout << "Digits = " << count << endl;
+}
+
+// 34. GCD of three numbers
+int gcd(int a, int b) {
+    return b == 0 ? a : gcd(b, a % b);
+}
+void program34() {
+    int a, b, c;
+    cin >> a >> b >> c;
+    cout << "GCD = " << gcd(gcd(a, b), c) << endl;
+}
+
+// 35. Check even, odd, and prime until negative number
+bool isPrime(int n) {
+    if (n < 2) return false;
+    for (int i = 2; i <= sqrt(n); i++)
+        if (n % i == 0) return false;
+    return true;
+}
+void program35() {
+    int n, even = 0, odd = 0, prime = 0;
+    while (true) {
+        cin >> n;
+        if (n < 0) break;
+        if (n % 2 == 0) even++; else odd++;
+        if (isPrime(n)) prime++;
+    }
+    cout << "Even=" << even << " Odd=" << odd << " Prime=" << prime << endl;
+}
+
+// 36. Sum of every third integer less than 100
+void program36() {
+    int sum = 0;
+    for (int i = 2; i < 100; i += 3) sum += i;
+    cout << "Sum = " << sum << endl;
+}
+
+// 37. Series: 1/3! + 5/4! + 9/5! + ... + 97/99
+long long fact(int n) {
+    return (n <= 1) ? 1 : n * fact(n - 1);
+}
+void program37() {
+    double sum = 0;
+    for (int num = 1, den = 3; den <= 99; num += 4, den++)
+        sum += (double)num / fact(den);
+    cout << "Sum = " << sum << endl;
+}
+
+// 38. Series: 1/3 + 3/5 + 5/7 + ... + 97/99
+void program38() {
+    double sum = 0;
+    for (int i = 1, j = 3; i <= 97; i += 2, j += 2)
+        sum += (double)i / j;
+    cout << "Sum = " << sum << endl;
+}
+
+// 39. All possible combinations of 1,2,3,4
+void program39() {
+    for (int i = 1; i <= 4; i++)
+        for (int j = 1; j <= 4; j++)
+            for (int k = 1; k <= 4; k++)
+                cout << i << j << k << endl;
+}
+
+// 40. Prime numbers ending with digit 7 in descending order
+void program40() {
+    int a, b;
+    cin >> a >> b;
+    for (int i = b; i >= a; i--)
+        if (isPrime(i) && i % 10 == 7) cout << i << " ";
+    cout << endl;
+}
+
+// 41. Palindromic primes between 100 and 500
+bool isPalindrome(int n) {
+    int rev = 0, temp = n;
+    while (n) {
+        rev = rev * 10 + n % 10;
+        n /= 10;
+    }
+    return rev == temp;
+}
+void program41() {
+    for (int i = 100; i <= 500; i++)
+        if (isPrime(i) && isPalindrome(i)) cout << i << " ";
+    cout << endl;
+}
+
+// 42. LCM of three numbers
+int lcm(int a, int b) {
+    return a * b / gcd(a, b);
+}
+void program42() {
+    int a, b, c;
+    cin >> a >> b >> c;
+    cout << "LCM = " << lcm(lcm(a, b), c) << endl;
+}
+
+// 43. Sales commission program
+void program43() {
+    double sales;
+    while (true) {
+        cin >> sales;
+        if (sales == -1) break;
+        cout << "Earnings = " << 200 + 0.09 * sales << endl;
+    }
+}
+
+// 44. Display number and its square
+void program44() {
+    int a, b;
+    cin >> a >> b;
+    for (int i = a; i <= b; i++)
+        cout << "(" << i << "," << i * i << ") ";
+    cout << endl;
+}
+
+// 45. Calories burned on treadmill
+void program45() {
+    for (int i = 10; i <= 30; i += 5)
+        cout << i << " minutes = " << i * 3.9 << " calories" << endl;
+}
+
+// 46. Count scores above 60
+void program46() {
+    int n, count = 0;
+    while (true) {
+        cin >> n;
+        if (n == -1) break;
+        if (n > 60) count++;
+    }
+    cout << "Above 60 = " << count << endl;
+}
+
+// 47. Frequency of positive and negative numbers
+void program47() {
+    int n, x, pos = 0, neg = 0;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> x;
+        if (x > 0) pos++;
+        else if (x < 0) neg++;
+    }
+    cout << "Positive=" << pos << " Negative=" << neg << endl;
+}
 
 
 
