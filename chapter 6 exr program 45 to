@@ -1,0 +1,163 @@
+// 45. Calories burned on a treadmill
+void program45() {
+    for (int i = 10; i <= 30; i += 5)
+        cout << i << " minutes = " << i * 3.9 << " calories" << endl;
+}
+
+// 46. Count scores above 60
+void program46() {
+    int n, count = 0;
+    while (true) {
+        cin >> n;
+        if (n == -1) break;
+        if (n > 60) count++;
+    }
+    cout << "Above 60 = " << count << endl;
+}
+
+// 47. Frequency of positive and negative numbers
+void program47() {
+    int n, x, pos = 0, neg = 0;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> x;
+        if (x > 0) pos++;
+        else if (x < 0) neg++;
+    }
+    cout << "Positive=" << pos << " Negative=" << neg << endl;
+}
+
+49
+Output:
+1
+1 2
+1 2 3
+1 2 3 4
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 1; i <= 4; i++) {
+        for(int j = 1; j <= i; j++) {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+Program 50
+Output:
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 5; i >= 1; i--) {
+        for(int j = 1; j <= i; j++) {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+Program 51
+Output:
+1 2 3 4 5
+  2 3 4 5
+    3 4 5
+      4 5
+        5
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 1; i <= 5; i++) {
+        for(int s = 1; s < i; s++) {
+            cout << "  ";
+        }
+        for(int j = i; j <= 5; j++) {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+Program 52
+Output:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 1; i <= 5; i++) {
+        for(int j = 1; j <= i; j++) {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+Program 53
+Multiplication Table (Nested Loops)
+Output:
+1  2   3   4   5
+2  4   6   8  10
+3  6   9  12  15
+4  8  12  16  20
+5 10  15  20  25
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 1; i <= 5; i++) {
+        for(int j = 1; j <= 5; j++) {
+            cout << i * j << "\t";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+Program 54
+Output:
+1 2 4 6
+2 2 4 6
+3 2 4 6
+4 2 4 6
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 1; i <= 4; i++) {
+        cout << i << " 2 4 6" << endl;
+    }
+    return 0;
+}
+
+
+
