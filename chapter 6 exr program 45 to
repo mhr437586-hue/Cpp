@@ -311,5 +311,201 @@ int main() {
 }
 
 
+Program 60
+
+Triangle of Alphabets (User Input Height)
+
+Output (if height = 5):
+A
+AB
+ABC
+ABCD
+ABCDE
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int h;
+    cout << "Enter height: ";
+    cin >> h;
+
+    for(int i = 1; i <= h; i++) {
+        for(int j = 0; j < i; j++) {
+            cout << char('A' + j);
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+Program 61
+
+Odd Number Pattern using while loop
+
+Output:
+1
+3 5
+7 9 11
+13 15 17 19
+21 23 25 27 29
+31 33 35 37 39 41
+43 45 47 49 51 53 55
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num = 1, row = 1;
+
+    while(row <= 7) {
+        int col = 1;
+        while(col <= row) {
+            cout << num << " ";
+            num += 2;
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+    return 0;
+}
+
+
+Program 62
+
+Mirror Number Pattern
+
+Output:
+1 2 3 4 5 6 7 6 5 4 3 2 1
+1 2 3 4 5     5 4 3 2 1
+1 2 3 4         4 3 2 1
+1 2 3             3 2 1
+1 2                 2 1
+1                     1
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 6;
+
+    for(int i = n; i >= 1; i--) {
+        for(int j = 1; j <= i; j++) {
+            cout << j << " ";
+        }
+
+        for(int s = 1; s <= (n - i) * 2; s++) {
+            cout << "  ";
+        }
+
+        for(int j = i; j >= 1; j--) {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+
+Program 63
+
+Triangle using character B
+
+Output:
+    B
+   B B
+  B   B
+ B     B
+BBBBBBBBB
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 5;
+
+    for(int i = 1; i <= n; i++) {
+        for(int s = n; s > i; s--) {
+            cout << " ";
+        }
+
+        for(int j = 1; j <= (2*i - 1); j++) {
+            if(j == 1 || j == (2*i - 1) || i == n)
+                cout << "B";
+            else
+                cout << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+Program 64
+
+Number Pattern
+
+Output:
+0
+01
+012
+0123
+01234
+012345
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 0; i <= 5; i++) {
+        for(int j = 0; j <= i; j++) {
+            cout << j;
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+
+Program 65
+
+Checker Board Pattern
+
+Output:
+* . * . * .
+. * . * . *
+* . * . * .
+. * . * . *
+* . * . * .
+. * . * . *
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 6;
+
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= n; j++) {
+            if((i + j) % 2 == 0)
+                cout << "* ";
+            else
+                cout << ". ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
 
 
