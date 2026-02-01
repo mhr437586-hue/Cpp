@@ -9,31 +9,51 @@ int main(){
     
 Program 1
 
-    int n=1;
-    while(n<=5){
-        cout<<"Pakistan"<<endl;
-        n++;
-    }
+  #include<iostream>
+using namespace std;
+int main()
+{
+	int n=1;
+	while(n<=5)
+	{
+	cout<<"Pakistan"<<endl;
+	  n++;
+} 
+ return 0;
+}
     
     program 2
     
-        int n=1;
-        while(n<=10){
-            cout<<n<<endl;
-            n++;
-        }
-        
+   #include<iostream>
+using namespace std;
+int main()
+{
+	int n=1;
+	while(n<=10)
+	{
+	cout<<n<<endl;
+	  n++;
+} 
+ return 0;
+}
     
     Program 3
 
-    int n=1,sum=0;
-    while(n<=5){
-        cout<<n<<endl;
-        sum+=n;   
-        n++;
-    }
-    cout<<"Sum of the number is ::> "<<sum<<endl;
-    
+  #include<iostream>
+using namespace std;
+int main()
+{
+	int n=1, sum=0;
+	while(n<=5)
+	{
+	cout<<n<<endl;
+    sum +=n;
+	  n++;  
+} 		
+   cout<<"sum is "<<sum<<endl;
+ return 0;
+}
+
     
     program 4
 
