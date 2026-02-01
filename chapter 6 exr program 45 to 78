@@ -1,31 +1,81 @@
 // 45. Calories burned on a treadmill
-void program45() {
-    for (int i = 10; i <= 30; i += 5)
-        cout << i << " minutes = " << i * 3.9 << " calories" << endl;
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int minutes = 10; minutes <= 30; minutes += 5) {
+        cout << minutes << " minutes = "
+             << minutes * 3.9 << " calories" << endl;
+    }
+    return 0;
 }
+
 
 // 46. Count scores above 60
-void program46() {
-    int n, count = 0;
+#include <iostream>
+using namespace std;
+
+int main() {
+    int score, count = 0;
+
     while (true) {
-        cin >> n;
-        if (n == -1) break;
-        if (n > 60) count++;
+        cin >> score;
+        if (score == -1)
+            break;
+        if (score > 60)
+            count++;
     }
-    cout << "Above 60 = " << count << endl;
+
+    cout << "Above 60 = " << count;
+    return 0;
 }
 
+
 // 47. Frequency of positive and negative numbers
-void program47() {
-    int n, x, pos = 0, neg = 0;
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, num, positive = 0, negative = 0;
+
+    cout << "Enter total numbers: ";
     cin >> n;
-    for (int i = 0; i < n; i++) {
-        cin >> x;
-        if (x > 0) pos++;
-        else if (x < 0) neg++;
+
+    for (int i = 1; i <= n; i++) {
+        cin >> num;
+        if (num > 0) positive++;
+        else if (num < 0) negative++;
     }
-    cout << "Positive=" << pos << " Negative=" << neg << endl;
+
+    cout << "Positive = " << positive
+         << " Negative = " << negative;
+    return 0;
 }
+
+48
+output:
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= 5; j++) {
+            if (i == 1 || i == 5 || j == 1 || j == 5)
+                cout << "* ";
+            else
+                cout << "  ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
 
 49
 Output:
