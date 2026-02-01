@@ -57,28 +57,44 @@ int main()
     
     program 4
 
-    int n=1;
-while(n<=5){
-    cout<<n<<setw(8)<<n*n<<endl;
-n++;
+   #include<iostream>
+using namespace std;
+int main()
+{
+	int n=1;
+	while(n<=5)
+	{
+	cout<<n<<" "<<n*n<<endl;
+	  n++;  
+} 		
+ return 0;
 }
+
 
 
 Program 5
 
+#include<iostream>
+using namespace std;
+int main()
+{
 int n;
-cout<<"Enter the number ::> ";
+cout<<"Enter a number: ";
 cin>>n;
 int i=1;
-while(i<=10){
-    cout<<n<<"*"<<i<<" = "<<n*i<<endl;
-    i++;
+while(i<=10)
+{
+cout<<n<<"*"<<i<<"="<<n*i<<endl;
+i++;
 }
+ return 0;
+}
+
     
     
 Program 6
 
-int n,digit,sum=0;
+int n, digit,sum=0;
 cout<<"Enter the number ::> ";
 cin>>n;
 while(n!=0){
