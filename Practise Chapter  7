@@ -30,3 +30,104 @@ int main() {
     cout << "Total prime numbers = " << count;
     return 0;
 }
+
+Program 2: Store Roll Numbers & Marks
+#include <iostream>
+using namespace std;
+
+int main() {
+    int roll[5], marks[5];
+
+    for(int i = 0; i < 5; i++) {
+        cout << "Enter roll number: ";
+        cin >> roll[i];
+        cout << "Enter marks: ";
+        cin >> marks[i];
+    }
+
+    cout << "\nStudent Data:\n";
+    for(int i = 0; i < 5; i++) {
+        cout << "Roll No: " << roll[i]
+             << " Marks: " << marks[i] << endl;
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
