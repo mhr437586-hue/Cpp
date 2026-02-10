@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -6,57 +7,61 @@ int main()
     int A[3][3], B[3][3], C[3][3];
     int i, j, k;
 
-    // Input matrix A
-    cout << "Enter values of Matrix A:\n";
-    for (i = 0; i < 3; i++)
-    {
-        for (j = 0; j < 3; j++)
+    // Input Matrix A
+    for(i = 0; i < 3; i++)
+        for(j = 0; j < 3; j++)
         {
+            cout << "Enter value for Matrix A: ";
             cin >> A[i][j];
         }
-    }
 
-    // Input matrix B
-    cout << "Enter values of Matrix B:\n";
-    for (i = 0; i < 3; i++)
-    {
-        for (j = 0; j < 3; j++)
+    // Input Matrix B
+    for(i = 0; i < 3; i++)
+        for(j = 0; j < 3; j++)
         {
+            cout << "Enter value for Matrix B: ";
             cin >> B[i][j];
         }
-    }
 
-    // Initialize matrix C with 0
-    for (i = 0; i < 3; i++)
-    {
-        for (j = 0; j < 3; j++)
-        {
+    // Initialize Matrix C
+    for(i = 0; i < 3; i++)
+        for(j = 0; j < 3; j++)
             C[i][j] = 0;
-        }
+
+    // Display Matrix A
+    cout << "\nMatrix A:\n";
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+            cout << A[i][j] << "\t";
+        cout << endl;
     }
 
-    // Matrix multiplication
-    for (i = 0; i < 3; i++)
+    // Display Matrix B
+    cout << "\nMatrix B:\n";
+    for(i = 0; i < 3; i++)
     {
-        for (j = 0; j < 3; j++)
-        {
-            for (k = 0; k < 3; k++)
-            {
-                C[i][j] = C[i][j] + A[i][k] * B[k][j];
-            }
-        }
+        for(j = 0; j < 3; j++)
+            cout << B[i][j] << "\t";
+        cout << endl;
     }
 
-    // Output matrix C
-    cout << "Product of Matrix A and B is:\n";
-    for (i = 0; i < 3; i++)
+    // Matrix Multiplication
+    for(i = 0; i < 3; i++)
+        for(j = 0; j < 3; j++)
+            for(k = 0; k < 3; k++)
+                C[i][j] += A[i][k] * B[k][j];
+
+    // Output Result
+    cout << "\nProduct of Matrix A and B:\n";
+    for(i = 0; i < 3; i++)
     {
-        for (j = 0; j < 3; j++)
-        {
+        for(j = 0; j < 3; j++)
             cout << C[i][j] << "\t";
-        }
         cout << endl;
     }
 
     return 0;
 }
+
+
