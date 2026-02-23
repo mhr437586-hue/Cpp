@@ -1,0 +1,110 @@
+Basics of structured and Modular programming. 
+Basic Algorithms and problem solving,
+development of basic algorithms,
+
+1️⃣ Sum of Two Numbers (Structured Programming – Sequence)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, sum;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;        // Input
+    sum = a + b;          // Processing
+    cout << "Sum = " << sum;  // Output
+    return 0;
+}
+2️⃣ Even or Odd (Structured Programming – Selection)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if(num % 2 == 0)      // Selection
+        cout << "Even";
+    else
+        cout << "Odd";
+    return 0;
+}
+3️⃣ Print Numbers 1 to 10 (Structured Programming – Iteration)
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 1; i <= 10; i++)  // Loop
+        cout << i << " ";
+    return 0;
+}
+4️⃣ Factorial of a Number (Modular Programming – Function)
+#include <iostream>
+using namespace std;
+
+int factorial(int n) {         // Module / Function
+    int fact = 1;
+    for(int i = 1; i <= n; i++)
+        fact = fact * i;
+    return fact;
+}
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    cout << "Factorial = " << factorial(num);
+    return 0;
+}
+5️⃣ Find Maximum Number in Array (Algorithm / Modular Programming)
+#include <iostream>
+using namespace std;
+
+int findMax(int arr[], int n) {   // Module
+    int max = arr[0];
+    for(int i = 1; i < n; i++) {
+        if(arr[i] > max)
+            max = arr[i];
+    }
+    return max;
+}
+
+int main() {
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter elements: ";
+    for(int i = 0; i < n; i++)
+        cin >> arr[i];
+    cout << "Maximum = " << findMax(arr, n);
+    return 0;
+}
+6️⃣ Linear Search (Algorithm)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, x;
+    cout << "Enter number of elements: ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter elements: ";
+    for(int i = 0; i < n; i++)
+        cin >> arr[i];
+    cout << "Enter value to search: ";
+    cin >> x;
+
+    bool found = false;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] == x) {
+            found = true;
+            break;
+        }
+    }
+
+    if(found)
+        cout << "Found";
+    else
+        cout << "Not Found";
+    return 0;
+}
