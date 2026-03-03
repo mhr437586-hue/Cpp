@@ -1,62 +1,136 @@
-#include <iostream>
-using namespace std;
 
-int main() {
-    // code
-    return 0;
+ Even / Odd::>
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter a number";
+    cin>>n;
+    if(n%2==0)
+     cout<<"is even";
+     else
+     cout<<"odd";
+return 0;
 }
-🔴 STEP 2: Learn these 6 programs ONLY (VERY HIGH CHANCE)
-1️⃣ Hello World
-cout << "Hello World";
-2️⃣ Even / Odd
-int n;
-cin >> n;
-if(n % 2 == 0)
-    cout << "Even";
-else
-    cout << "Odd";
-3️⃣ Largest of Two Numbers
-int a, b;
-cin >> a >> b;
-if(a > b)
-    cout << a;
-else
-    cout << b;
-4️⃣ Table of a Number
-int n;
-cin >> n;
-for(int i = 1; i <= 10; i++)
-    cout << n * i << endl;
-5️⃣ Sum of First N Numbers
-int n, sum = 0;
-cin >> n;
-for(int i = 1; i <= n; i++)
-    sum += i;
-cout << sum;
-6️⃣ Array Print
-int a[5] = {1,2,3,4,5};
-for(int i = 0; i < 5; i++)
-    cout << a[i];
 
-    Prime Number
-#include <iostream>
+
+ Largest of Two Numbers::>
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,z;
+    cout<<"Enter a number";
+    cin>>n>>z;
+    if(n>z)
+     cout<<n<<"is larger";
+     else
+     cout<<z<<"is larger";
+return 0;
+}
+
+Table of a Number::>
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter a number";
+    cin>>n;
+    for(int i =1; i <=10; i++)
+        cout << n << " * " << i << " = " << n * i <<endl;
+    return 0;
+
+}
+
+
+ Sum of First N Numbers::>
+
+
+#include<iostream>
 using namespace std;
 
-int main() {
-    int n, i, flag = 0;
+int main()
+{
+    int n, sum = 0;
+    cout << "Enter a number: ";
     cin >> n;
 
-    for(i = 2; i < n; i++) {
-        if(n % i == 0) {
-            flag = 1;
-            break;
-        }
-    }
+    for(int i = 1; i <= n; i++)
+        sum += i;
 
-    if(flag == 0)
-        cout << "Prime";
-    else
-        cout << "Not Prime";
+    cout << "Sum = " << sum;
+    return 0;
+}
+
+ Array Print::>
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[5] = {1,2,3,4,5};
+for(int i = 0; i < 5; i++)
+    cout << a[i]<<endl;
 
     return 0;
 }
+
+    Prime Number::>
+
+#include <iostream>
+using namespace std;
+int main() {
+   int n,i, z=0; 
+   cout<<"Enter a number";
+   cin>>n;
+    for(i=2; i<n; i++)
+     if(n%i==0)
+     {
+        z=1;
+        break;
+     }
+     if(z==0)
+     cout<<"its prime";
+     else
+     cout<<"not prime";
+    return 0;
+}
+
+output::>
+*
+* *
+* * *
+* * * *
+* * * * *
+
+
+ #include <iostream>
+ using namespace std;
+ int main()  
+{
+   int n;
+    cout<<"Enter no. of rows";
+   cin>>n;
+    for(int i=1; i<=n; i++)     
+    {
+     for(int j=1; j<=i; j++)
+    {
+        cout << " * ";
+     }
+     cout << endl;
+ }
+     return 0;
+ }
+
+
+
+
+
+
+
